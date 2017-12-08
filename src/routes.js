@@ -6,14 +6,14 @@ import Genre from './components/Genre';
 import Home from './components/Home';
 
 
-export const routes =(
-  <div>
-       const App=()=>(
+export const routes = (
+  <main>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='admin' component={Admin} />
-        <Route path='genre' component={Genre} />
-        </Switch>
-    )
-      </div>
-  )
+        <Route path='/admin' component={Admin} />
+        <Route path='/genre' component={Genre} />
+      </Switch>
+  </main>
+)
+
+export default routes

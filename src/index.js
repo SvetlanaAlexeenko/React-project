@@ -5,11 +5,13 @@ import { Switch, Route } from 'react-router-dom';
 import './index.css';
 import {routes} from './routes';
 import registerServiceWorker from './registerServiceWorker';
+import App from './App';
 
 render((
     <BrowserRouter>
       <div>
-       routes={routes};
+      <App/>
+       {routes}
       </div>
   </BrowserRouter>),
   document.getElementById('root')

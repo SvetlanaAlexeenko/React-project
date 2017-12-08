@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Header from './components/Header';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>App</h1>
-        <ul>
-          <li><Link to='/admin'>Admin</Link></li>
-          <li><Link to='/genre'>Genre</Link></li>
-        </ul>
-        {this.props.children}
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div>
+    <Header />
+  </div>
+)
+
+export default App
